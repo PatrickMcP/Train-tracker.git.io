@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title of the document</title>
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Your custom styles -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="cyan">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">LOGO</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Your content here -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 l6">
+                    <!-- Your content here -->
+                    <form class="form-control">
+                        <label for="formTrainName">Train Name</label>
+                        <br>
+                        <input type="text" name="formTrainName" id="formTrainName">
+                        <br>
+                        <label for="destination">Destination</label>
+                        <br>
+                        <input type="text" name="formDestination" id="formDestination">
+                        <br>
+                        <label for="firstTrainTime">First Train Time (HH:mm) Military Time</label>
+                        <br>
+                        <input type="text" name="formFirstTrainTime" id="formFirstTrainTime">
+                        <br>
+                        <label for="frequency">Frequency (min)</label>
+                        <br>
+                        <input type="text" name="formFrequency" id="formFrequency">
+                        <br>
+                        <button type="button" id="submit" class="btn btn-primary mt-2">Submit</button>
+                    </form>
+                </div>
+                <div class="col s12 m4 l6">
+                    <table class="table" id="infoTable">
+                        <thead class="#">
+                            <tr>
+                                <th scope="col" id="trainName">Train Name</th>
+                                <th scope="col" id="destination">Destination</th>
+                                <th scope="col" id="frequency">Frequency (min)</th>
+                                <th scope="col" id="nextArrival">Next Arrival</th>
+                                <th scope="col" id="minutesAway">Minutes Away</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="page-footer cyan">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">First Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright Patrick McPartland
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src= "assets/javascrpit/app.js"></script>
+</body>
+
+</html>
